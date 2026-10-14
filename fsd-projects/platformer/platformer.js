@@ -40,7 +40,10 @@ createPlatform(1350,350, 150, 5, "blue");
 createPlatform(500, 80, 20, 300);
 createPlatform(850, 350, 78, 10, "red");
 createPlatform(750, 450, 78, 10, "red")
-
+createBadPlatform(400, 450, 100, 20, "red")
+createPlatform(100, 300, 200, 20, "green", 100, 600, 2, 0, 0, 0)
+createPlatform(300, 200, 200, 20, "orange", 0, 0, 0, 200, 400, 1);
+ createPlatform(400, 300, 200, 20, "blue", 300, 500, 1, 100, 400, 1);
 
     // TODO 3 - Create Collectables
 createCollectable("steve", 1350, 300);
@@ -49,19 +52,12 @@ createCollectable("", 1350, 50);
 createCollectable("diamond", 850, 170, 0.5, 0.7);
 
 
-
-  
-
-
+createCollectable("gem", 200, 100, 0, 1, 100, 300, 2)
     
   // TODO 4 - Create Cannons
 createCannon("top", 350, 1000);
 createCannon("right", 600,1000);
-createCannon("top", 200, 1000);
-
-
-
-    
+createCannon("top", 200, 1000);    
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
