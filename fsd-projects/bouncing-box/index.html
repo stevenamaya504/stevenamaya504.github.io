@@ -74,15 +74,21 @@ var positionX = 0;
 
 
 
+
+
         /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-    moveBoxTo(positionX);
-    positionX += 10;
+      moveBoxTo(positionX);
+      positionX += 10;
+
         }
+
+    
+
 
 
 
@@ -95,11 +101,12 @@ var positionX = 0;
          * - increase the speed
          * - move the box to the left side of the screen.
          */
-        function handleBoxClick() {
-       positionX = 0;
-      changeBoxText(0);
+        let points = 0;   
 
-
+      function handleBoxClick() {
+        positionX = 0;
+        points += 1;
+        changeBoxText(points);
         }
 
 
